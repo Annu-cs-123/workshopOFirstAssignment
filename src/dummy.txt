@@ -1,0 +1,38 @@
+ <Accordion :activeIndex="0">
+      <AccordionTab header="Training Detail">
+        <h6>Total Lessons Completed: {{ data.length }}</h6>
+        <table class="table table-bordered">
+          <tr>
+            <td>Lesson Type</td>
+            <td></td>
+          </tr>
+        </table>
+      </AccordionTab>
+      <AccordionTab header="Lesson Detail">
+        <div class="card">
+          <div class="d-flex align-items-center justify-content-center">
+            <div
+              class="col-6 align-items-center justify-content-center bg-indigo-500 font-bold m-2 px-5 py-3 border-round"
+            >
+              flex-1 on small devices and none on bigger.
+            </div>
+            <div
+              class="col-6 align-items-center justify-content-center bg-indigo-500 font-bold m-2 px-5 py-3 border-round"
+            >
+              flex-1 on small devices and none on bigger.
+            </div>
+          </div>
+        </div>
+      </AccordionTab>
+      <AccordionTab header="Header III">
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+          cumque nihil impedit quo minus.
+        </p>
+      </AccordionTab>
+    </Accordion>

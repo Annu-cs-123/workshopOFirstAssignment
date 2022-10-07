@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import BookData from "./BookData";
+import BookList from "./BookList";
 
-function App() {
+const App = () => {
+  const [book, setBook] = useState(BookData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container my-4">
+        <BookList book={book} />
+        <div className="text-center mb-3">
+          {" "}
+          <button className=" btn btn-primary" onClick={() => setBook([])}>
+            Delete Book Data
+          </button>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
